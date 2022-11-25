@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Toggle</title>
+    </head>
+    <body>
+        <form id="form" onsubmit="formValidate(event)">
+        <p>
+        <input type="text" id="e-mail" placeholder="Email" />
+        </p><p>
+        <input type="password" id="pswd" placeholder="Password" />
+        </p>
+        <br>
+        <input id="submitButton" type="submit" class="submit" 
+      >
+         <br>
+        </form>
+
+<script>
+
+function formValidate(event) {
+event.preventDefault();
+var form = document.getElementById('form');
+var email = document.getElementById('e-mail').value;
+var password = document.getElementById('pswd').value;
+if(password.length<5){
+    alert("please enetre> 5")
+}
+else{
+    alert("form succes")
+    redirect()
+} 
+
+
+ }
+function redirect(){
+window.location.href="basic.html";
+}
+
+
+</script>
+    
+
+
+    </body>
+</html>

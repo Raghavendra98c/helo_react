@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+<script>
+
+//Regular Expressions -->to check the patterns 
+//Quantify operators 
+// + --> it will take 1 time / more than 1 time 
+// * --> it will take 0 time / more than 0 time 
+// ? --> it will take only one time 
+
+//Range oparators --> {5,9}
+//group opeartors --> []
+//escape opeartors --> access special characters --> /
+// /d  --> it indicates only digits 
+// /w    -> digits + words 
+// or oparators --> |
+//syntax 
+// ^ --> starting string
+// $ --> ending string
+
+
+// let pattern=/^Besa|bnt$/
+// let input="Besbnt"
+// //test()
+// let result=pattern.test(input)
+// console.log(result)
+
+
+// function helo(fname,city){
+//   let x=`my name is ${fname} i am from ${city}`
+//   console.log(x)
+// }
+
+// helo("Vijay","Chennai")
+
+
+
+const obj={
+  fname:"Vijay",
+  city:"Chennai",
+  helo:function(state,country){
+    let x=`my name is ${this.fname} i am from ${this.city},${state}, ${country}`
+    console.log(x)
+  }
+}
+const obj1={
+  fname:"Raghav",
+  city:"Banglore"
+}
+//call(),apply(),bind()
+
+obj.helo.call(obj1,"karanataka","banglore")
+obj.helo.apply(obj1,["karanataka","banglore"])
+//bind always retirn function , 
+let y=obj.helo.bind(obj1)
+y("karanataka","banglore")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

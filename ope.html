@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //calback function  one fun passed into another fun as an argumenets 
+
+        // function a(x,y,z){
+        //     console.log("fun 1")
+        //     x("vijay","banglore","karnataka")//callback
+        //     y()//call back
+        //     z()//callback
+        // }
+       
+        // function b(name,city,state){
+        //     console.log(`ma name is ${name} i am from ${city},${state}`)
+        // }
+        // function c(){
+        //     console.log("fun 3")
+        // }
+        // function d(){
+        //     console.log("fun 4")
+        // }
+        // a(b,c,d)
+
+//setTimeout() 
+//setInterval()
+
+// function helo(){
+//     console.log("Good morning")
+// }
+// setInterval("helo()",3000)
+// setTimeout(function myName(){
+// console.log("Hello")
+// alert("hedghegg")
+// },2000)
+
+// setTimeout(()=>{
+// document.write("Hello")
+// },1000)
+
+
+//sync()
+//async()
+
+// console.log("starting")
+// setTimeout(()=>{
+//     console.log("middle")
+// },2000)
+// console.log("ending")   
+
+
+// async function helo(){
+//     return "Good"
+// }
+// console.log(helo())
+
+
+//promises --> handle the async functions 
+//         --> resolve  ---> then()
+//         --> reject   --> catch()
+
+let x=new Promise(function myName(resolve,reject){
+    var a=100
+    if(a<200){
+        resolve("success")
+    }
+    else{
+        reject("your promises is failure plese check your code....")
+    }
+})
+x.then((msg)=>{
+    console.log(msg)
+})
+.catch((msg)=>{
+  console.log(msg)
+})
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
